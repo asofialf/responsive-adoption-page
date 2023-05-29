@@ -63,14 +63,15 @@ img{
     top: 0;
     left: 0;
     z-index: 100;
-  }
+    background: white;
+}
   
-  .nav {
+.nav {
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
   .nav__logo, 
   .nav__toggle {
@@ -127,18 +128,20 @@ img{
   }
 
   /*=============== HOME ===============*/
-.home {
-    background-color: var(--first-color);
-    padding: 9rem 0 2rem;
-    height: 100vh;
-    display: grid;
-  }
+  .home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/assets/img/home-background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
   
-  .home__container {
+.home__container {
     display: grid;
     align-content: center;
     row-gap: 2.5rem;
-  }
+}
   
   .home__data {
     text-align: center;
