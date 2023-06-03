@@ -18,7 +18,7 @@
   <header class="header">
     <nav class="nav container">
       <a href="#" class="nav__logo">
-        <img src="/assets/img/logo.png" width="40px" height="auto" href="#" class="nav__logo" />
+        <img src="/assets/img/logo.png" width="50px" height="auto" href="#" class="nav__logo" />
       </a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
@@ -81,51 +81,36 @@
   <section class="adopta" id="adopta">
     <h1>¡Busca a tu compañero!</h1>
     <h3>Estas son algunas de las mascotas en busca de un hogar</h3>
-    <div class="adopta_container container">
-      <div class="property-card">
-        <a href="#">
-          <div class="property-cat"></div>
-        </a>
-        <div class="property-description">
-          <h3> Luna </h3>
-          <p>Luna es una gata gris suave con ojos verdes. Es tranquila, amable
-            y le gusta jugar. Es una gran compañía para cualquier hogar acogedor.
-          </p>
-        </div>
-        <a href="#">
-          <div class="property-social-icons">
-            <p>Adoptar</p>
-          </div>
-        </a>
+    <div class="card-container">
+      <div class="card">
+        <img src="/assets/img/gata1.jpg" alt="Gata en adopción">
+        <h3>Luna</h3>
+        <p>Luna es una gata gris suave con ojos verdes grandes. 
+          Es tranquila, amable y le gusta jugar. Es una gran compañía 
+          para cualquier hogar acogedor.</p>
+        <button class="adoptar-btn">Adoptar</button>
       </div>
-      <div class="property-card">
-        <a href="#">
-          <div class="property-dog"></div>
-        </a>
-        <div class="property-description">
-          <h3> Max </h3>
-          <p>Max es un perro Labrador Retriever marrón con un pelaje brillante. Es cariñoso, juguetón y fiel.</p>
-        </div>
-        <a href="#">
-          <div class="property-social-icons">
-            <p>Adoptar</p>
-          </div>
-        </a>
+      <div class="card">
+        <img src="/assets/img/perro2.jpg" alt="Perro en adopción">
+        <h3>Max</h3>
+        <p>Max es un perro Labrador Retriever marrón con un pelaje 
+          brillante. Es cariñoso, juguetón y fiel</p>
+        <button class="adoptar-btn">Adoptar</button>
       </div>
-      <div class="property-card">
-        <a href="#">
-          <div class="property-bunny"></div>
-        </a>
-        <div class="property-description">
-          <h3> Simon </h3>
-          <p>Simón es tranquilo, curioso y le encanta explorar su entorno. Es un compañero amable y afectuoso que adora
-            los mimos.</p>
-        </div>
-        <a href="#">
-          <div class="property-social-icons">
-            <p>Adoptar</p>
-          </div>
-        </a>
+      <div class="card">
+        <img src="/assets/img/conejo3.webp" alt="Conejo en adopción">
+        <h3>Simón</h3>
+        <p>Simón es tranquilo, curioso y le encanta explorar su entorno. 
+          Es un compañero amable y afectuoso que adora los mimos.</p>
+        <button class="adoptar-btn">Adoptar</button>
+      </div>
+      <div class="card">
+        <img src="/assets/img/conejo3.webp" alt="Conejo en adopción">
+        <h3>Moni</h3>
+        <p>Moni es una gata blanca cariñosa y mimosa. Ama el sol y jugar
+          entre las plantas. Le gustan las aventuras y es una gran compañía.
+        </p>
+        <button class="adoptar-btn">Adoptar</button>
       </div>
     </div>
   </section>
@@ -133,30 +118,27 @@
   <section class="usuarios" id="usuarios">
     <h1>¿Qué dicen nuestros usuarios?</h1>
     <h3>Estas son algunas opiniones de personas que han utilizado nuestra aplicación</h3>
-    <div class="usuarios_container container">
-      <div class="card">
-        <div class="card-image" id="mauricio"></div>
-        <p class="card-title">Card title</p>
-        <p class="card-body">
-          Adoptar a mi gato a través de esta aplicación ha sido una de las mejores decisiones que he tomado.
-        </p>
-        <p class="footer">Written by <span class="by-name">Mauricio Chunga</span> on <span class="date">15/05/23</span></p>
+    <div class="usuarios-container">
+      <div class="card-usuarios">
+        <img src="/assets/img/mauricio.jpg" alt="Adoptante">
+        <h2>Mauricio</h2>
+        <p>Tenía miedo de adoptar una mascota pero con HairyPaws 
+          el proceso fue rápido y sencillo, además que pude encontrar la ideal para mi.</p>
+        <p class="usuarios-footer">Written by <span class="by-name">Mauricio</span> on <span class="date">05/05/23</span></p>
       </div>
-      <div class="card">
-        <div class="card-image" id="sarita"></div>
-        <p class="card-title">Card title</p>
-        <p class="card-body">
-         Gracias a esta aplicación tengo un nuevo miembro de la familia que me brinda amor incondicional.
-        </p>
-        <p class="footer">Written by <span class="by-name">Sarita Lukaku</span> on <span class="date">25/05/23</span></p>
+      <div class="card-usuarios">
+        <img src="/assets/img/sarita.jpg" alt="Adoptante">
+        <h2>Sarita</h2>
+        <p>Max es un perro Labrador Retriever marrón con un pelaje 
+          brillante. Es cariñoso, juguetón y fiel</p>
+          <p class="usuarios-footer">Written by <span class="by-name">Sarita</span> on <span class="date">05/05/23</span></p>
       </div>
-      <div class="card">
-        <div class="card-image" id="diego"></div>
-        <p class="card-title">Card title</p>
-        <p class="card-body">
-         Tenía miedo de adoptar una mascota pero con HairyPaws el proceso fue rápido y sencillo, además que pude encontrar la ideal para mi.
-        </p>
-        <p class="footer">Written by <span class="by-name">Diego Merino</span> on <span class="date">05/05/23</span></p>
+      <div class="card-usuarios">
+        <img src="/assets/img/merino.jpeg" alt="Adoptante">
+        <h2>Merino</h2>
+        <p>Simón es tranquilo, curioso y le encanta explorar su entorno. 
+          Es un compañero amable y afectuoso que adora los mimos.</p>
+          <p class="usuarios-footer">Written by <span class="by-name">Merino</span> on <span class="date">05/05/23</span></p>
       </div>
     </div>
   </section>
@@ -180,6 +162,8 @@
       <div class="nosotros_card_title"></div>
       <div class="nosotros_card_descripion"></div>
     </div>
+  </div>
+  <div class="nosotros_container container">
     <div class="nosotros_card">
       <div class="nosotros_card_image"></div>
       <div class="nosotros_card_title"></div>
@@ -241,21 +225,21 @@
 </body>
 <footer>
   <div class="hp_footer">
-      <div class="direcciones">
+      <div class="columna">
         <p class="tituloFooter">Vísitanos</p>
         <ul>
           <li>
-            Calle de las Mascotas #456, Distrito de Amor y Amistad, Lima,
+            Calle de las Mascotas #456, Distrito de<br>Amor y Amistad, Lima,
             Perú.
           </li>
           <br />
           <li>
-            Avenida de los Perritos #789, Urbanización Amigos Fieles,
+            Avenida de los Perritos #789,<br>Urbanización Amigos Fieles,
             Trujillo, Perú.
           </li>
         </ul>
       </div>
-      <div class="numeros">
+      <div class="columna">
         <p class="tituloFooter">Contáctanos</p>
         <ul>
           <li>+51 987 654 321</li>
