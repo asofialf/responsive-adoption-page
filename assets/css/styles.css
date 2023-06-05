@@ -13,7 +13,7 @@
 /*Responsive typography*/
 @media screen and (min-width: 1024px) {
   :root {
-    --biggest-font-size: 5rem;
+    --biggest-font-size: 3.5rem;
     --normal-font-size: 1rem;
     --smaller-font-size: .813rem;
   }
@@ -45,8 +45,8 @@ a {
 /*===========Reusable CSS Classes=============*/
 .container {
   max-width: 1024px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -109,6 +109,10 @@ a {
   color: var(--text-color);
 }
 
+.nav__link:hover{
+  color:#FA9630
+}
+
 .nav__close {
   position: absolute;
   top: 1rem;
@@ -135,8 +139,9 @@ a {
 .home__container {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 25%;
   transform: translate(-50%, -50%);
+  max-width: 30%;
 }
 
 .home__data {
@@ -147,6 +152,10 @@ a {
   font-size: 2.8rem;
   margin-bottom: 1.5rem;
   line-height: 2.7rem;
+}
+
+.home__description span{
+  color:#FA9630
 }
 
 .home__data p {
@@ -175,13 +184,34 @@ a {
   align-self: flex-end;
 }
 
+@media (max-width: 606px) {
+  .home__container {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+  }
+  .home__data .home__description{
+    font-size: 2.5rem;
+  }
+  .home__data p{
+    font-size: 1rem;
+  }
+}
 /*============= ADOPTA SECTION ==============*/
 .adopta {
   margin: 5em 0;
 }
-
-.adopta h1,
+.adopta span{
+  color:#FA9630
+}
+.adopta h1{
+  font-size: var(--biggest-font-size);
+  text-align: center;
+}
 .adopta h3 {
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -189,32 +219,32 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2em;
+  margin-top: 4.5em;
 }
 
 .card {
-  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  width: 300px;
   margin: 10px;
   padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 20px;
-  background: #f5f2f2;
-  box-shadow: 5px 5px 6px #f3f1f1,
-    -5px -5px 6px #f6f6f6;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 .card img {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
+  border-radius: 15px;
 }
 
 .card h3 {
-  font-size: 18px;
+  font-size: 1.3rem;
   margin-bottom: 10px;
 }
 
@@ -233,10 +263,10 @@ a {
 }
 
 .card .adoptar-btn:hover {
-  background-color:#d4791e;
+  background-color:#faac5d;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 606px) {
   .card {
     width: 100%;
   }
@@ -246,24 +276,30 @@ a {
 
 .usuarios {
   margin: 5em 0;
+  padding: 5em 0;
   background-color: #FA9630;
 }
 
-.usuarios h1,
-.usuarios h3 {
+.usuarios h1{
+  font-size: var(--biggest-font-size);
   text-align: center;
-  color: white;
+  color:white;
+}
+.usuarios h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  color:white;
 }
 
 .usuarios-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2em;
+  margin-top: 4.5em;
 }
 
 .card-usuarios {
-  width: 300px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -279,11 +315,11 @@ a {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
+  border-radius: 2em;
 }
 
 .card-usuarios h3 {
   font-size: 18px;
-  margin-bottom: 10px;
 }
 
 .card-usuarios p {
@@ -313,71 +349,71 @@ a {
   margin: 5em 0;
 }
 
-.nosotros h1,
+.nosotros h1{
+  font-size: var(--biggest-font-size);
+  text-align: center;
+}
 .nosotros h3 {
+  font-size: 1.5rem;
   text-align: center;
 }
 
-.nosotros_container {
+.nosotros-container {
   display: flex;
-  justify-content: space-between;
-  margin: 2em 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2em;
 }
 
-.nosotros_card {
-  width: 300px;
-  height: 190px;
-  background: #ffff;
-  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
-  padding: 12px 10px;
+.nosotros-card img{
+  width: 200px;
+  height: auto;
   margin-bottom: 10px;
+  border-radius: 15px;
 }
 
-.nosotros_card_image {
-  width: 120px;
-  height: 120px;
-  position: relative;
-  float: left;
-  background-image: url('/assets/img/sofia.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  background-position: 100% 0;
+.nosotros-card {
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
-.nosotros_card_title {
-  width: 140px;
-  height: 30px;
-  position: relative;
-  float: right;
-  border-radius: 5px;
-  background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 40%, #e5e5e5 48%);
-  background-size: 200% 100%;
-  background-position: 100% 0;
+.carrera{
+  font-size: 13px;
+  color: #636363;
 }
 
-.nosotros_card_descripion {
-  width: 140px;
-  height: 80px;
-  position: relative;
-  float: right;
-  border-radius: 5px;
-  background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 40%, #e5e5e5 48%);
-  margin-top: 10px;
-  background-size: 200% 100%;
-  background-position: 100% 0;
+@media (max-width: 768px) {
+  .nosotros-card {
+    width: 100%;
+  }
 }
 
 /* === DESCARGAR SECTION ===*/
 .descargar {
-  margin: 5em 0;
+
+  background: #FA9630;
 }
 
-.descargar h1,
-.descargar h3 {
+.descargar h1{
+  font-size: var(--biggest-font-size);
   text-align: center;
+  color: white;
+}
+.descargar h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
 }
 
+.descargar_container img{
+  width: 500px;
+  height: auto;
+}
 /*======CONTACTO SECTION=======*/
 .contacto {
   display: flex;
@@ -386,6 +422,10 @@ a {
   background: url(/assets/img/footer.png) no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.column-right img{
+  width: 200px;
 }
 
 .formulario_contacto {
