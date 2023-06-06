@@ -198,6 +198,11 @@ a {
   .home__data p{
     font-size: 1rem;
   }
+  .home{
+    background: url(/assets/img/back-opacity.png);
+    background-size: cover;
+    background-position: center;
+  }
 }
 /*============= ADOPTA SECTION ==============*/
 .adopta {
@@ -366,10 +371,10 @@ a {
 }
 
 .nosotros-card img{
-  width: 200px;
+  width: 150px;
   height: auto;
   margin-bottom: 10px;
-  border-radius: 15px;
+  border-radius: 50%;
 }
 
 .nosotros-card {
@@ -395,7 +400,7 @@ a {
 
 /* === DESCARGAR SECTION ===*/
 .descargar {
-
+  padding: 5em 0;
   background: #FA9630;
 }
 
@@ -404,33 +409,73 @@ a {
   text-align: center;
   color: white;
 }
-.descargar h3 {
-  font-size: 1.5rem;
+
+.descargar_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.column{
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.column h3 {
+  font-size: 2rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   text-align: center;
   color: white;
 }
 
-.descargar_container img{
-  width: 500px;
+.column p{
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+.descargar_container .mockup{
+  width: 300px;
   height: auto;
+}
+.column-right .store{
+  width: 200px;
+}
+@media (max-width: 768px) {
+  .descargar_container .mockup{
+    width: 300px;
+    height: auto;
+  }
+  .column h3 {
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: white;
+  }
+  
+  .column p{
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0.5em;
+  }
 }
 /*======CONTACTO SECTION=======*/
 .contacto {
   display: flex;
   align-items: center;
-  min-height: 67vh;
+  min-height: 71vh;
   background: url(/assets/img/footer.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.column-right img{
-  width: 200px;
-}
-
 .formulario_contacto {
-  width: 400px;
-  height: 500px;
+  width: 500px;
+  height: 600px;
   display: flex;
   top: 178px;
   right: 5%;
@@ -443,12 +488,24 @@ a {
   margin-left: auto;
 }
 
+.tituloFormulario{
+  color:#5D5A88;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.descripcionFormulario{
+  margin-bottom: 1em;
+}
+
 .input {
   outline: none;
   border: none;
   border-radius: 10px;
   background-color: #F9F9FF;
   margin-top: 10px;
+  font-family: var(--body-font);
+  color:#ADABC3;
 }
 
 .btn_EnviarFormulario {
@@ -460,6 +517,7 @@ a {
   margin: 10px auto;
   background-color: #32120E;
   color: #fff;
+  font-family: var(--body-font);
 }
 
 #nombre,
@@ -473,6 +531,28 @@ a {
   height: 120px;
   padding-top: 10px;
 }
+@media (max-width: 768px) {
+  .formulario_contacto{
+    width: 300px;
+    height: 400px;
+    top: 50%;
+    right: 23%;
+  }
+}
+@media (max-width: 1500px) {
+  .formulario_contacto{
+    width: 400px;
+    height: 500px;
+    top: 178px;
+    right: 5%;
+  }
+}
+@media (max-width: 1400px) {
+  .formulario_contacto{
+    top: 50%;
+    right: 15%;
+  }
+}
 
 /*=== FOOTER SECTION ====*/
 
@@ -485,12 +565,14 @@ a {
 .hp_footer .tituloFooter {
   color: white;
   font-size: 1.9rem;
+  margin: 0.8rem 0;
 }
 
 .columna {
   display: flex;
   flex-direction: column;
-  margin: 1rem 2rem;
+  margin: 1rem 4rem;
+  max-width: 500px;
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -519,26 +601,6 @@ a {
 }
 
 /* For large devices */
-@media screen and (min-width: 1024px) {
-  .home__container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    column-gap: 2rem;
-  }
-
-  .home__data {
-    text-align: initial;
-  }
-
-  .home__img img {
-    width: 400px;
-  }
-
-  .home__shadow {
-    width: 250px;
-    height: 40px;
-  }
-}
 
 @media screen and (min-width: 1048px) {
   .container {
